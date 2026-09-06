@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulSpecies // The Scrapbook Journal & Creative Desk Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Patrick+Hand&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- =======================================================================
+         DESK ATMOSPHERE: Decorative Objects around Outer Edges (Top-Down View)
+         ======================================================================= -->
+    <div class="desk-atmosphere" aria-hidden="true">
+        <!-- 1. Ceramic Coffee / Tea Cup on Saucer (Bottom Left) -->
+        <svg class="desk-item desk-coffeecup" viewBox="0 0 140 140">
+            <!-- Saucer -->
+            <circle cx="70" cy="70" r="62" fill="#EAD8C5" stroke="#B58B68" stroke-width="3"/>
+            <circle cx="70" cy="70" r="54" fill="#F5EBDD" stroke="#CAA88F" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <!-- Ceramic Cup -->
+            <circle cx="70" cy="70" r="42" fill="#FFFFFF" stroke="#6B4938" stroke-width="3.5"/>
+            <!-- Warm Brewed Coffee with foam swirl -->
+            <circle cx="70" cy="70" r="36" fill="#4E3326"/>
+            <ellipse cx="64" cy="65" rx="18" ry="12" fill="#6B4938" opacity="0.8"/>
+            <path d="M55,68 Q68,60 76,72 Q82,78 70,80 Q58,80 55,68 Z" fill="#D4BC9F" opacity="0.6"/>
+            <!-- Ceramic Handle -->
+            <path d="M112,60 Q130,60 128,75 Q125,86 108,82" fill="none" stroke="#6B4938" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+
+        <!-- 2. Washi Tape Rolls on Desk (Bottom Left, beside cup) -->
+        <svg class="desk-item desk-washi-rolls" viewBox="0 0 120 80">
+            <!-- Roll 1 (Terracotta) -->
+            <g transform="translate(15, 10)">
+                <ellipse cx="25" cy="40" rx="20" ry="24" fill="#A86F55" stroke="#6B4938" stroke-width="2"/>
+                <ellipse cx="25" cy="40" rx="10" ry="12" fill="#EAD8C5" stroke="#6B4938" stroke-width="2"/>
+                <rect x="25" y="16" width="30" height="48" fill="#A86F55" stroke="#6B4938" stroke-width="2"/>
+                <ellipse cx="55" cy="40" rx="6" ry="24" fill="#8C533C"/>
+            </g>
+            <!-- Roll 2 (Checkered Kraft) -->
+            <g transform="translate(55, 18) rotate(15)">
+                <ellipse cx="22" cy="30" rx="18" ry="20" fill="#B58B68" stroke="#6B4938" stroke-width="2"/>
+                <ellipse cx="22" cy="30" rx="8" ry="9" fill="#F5EBDD" stroke="#6B4938" stroke-width="1.5"/>
+                <rect x="22" y="10" width="22" height="40" fill="#B58B68" stroke="#6B4938" stroke-width="2"/>
+            </g>
+        </svg>
+
+        <!-- 3. Vintage Fountain Pen with Brass Nib (Top Right) -->
+        <svg class="desk-item desk-fountain-pen" viewBox="0 0 200 60">
+            <!-- Barrel -->
+            <rect x="30" y="24" width="120" height="14" rx="3" fill="#30251F" stroke="#1C1410" stroke-width="1.5"/>
+            <!-- Gold Band -->
+            <rect x="145" y="22" width="6" height="18" fill="#CAA88F" stroke="#6B4938" stroke-width="1"/>
+            <!-- Grip Section -->
+            <polygon points="151,24 170,26 170,36 151,38" fill="#4A3B32"/>
+            <!-- Gold Fountain Nib -->
+            <polygon points="170,27 195,31 170,35" fill="#D4BC9F" stroke="#6B4938" stroke-width="1.5"/>
+            <line x1="170" y1="31" x2="188" y2="31" stroke="#30251F" stroke-width="1"/>
+            <circle cx="182" cy="31" r="1.5" fill="#30251F"/>
+            <!-- Clip -->
+            <rect x="40" y="22" width="50" height="3" rx="1" fill="#CAA88F"/>
+        </svg>
+
+        <!-- 4. Pressed Dried Flower & Fern Leaves (Top Left) -->
+        <svg class="desk-item desk-dried-flower" viewBox="0 0 120 120">
+            <path d="M30,105 Q60,65 75,20" stroke="#7B8573" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Delicate Dried Leaves -->
+            <path d="M42,85 Q30,78 28,84 Q35,92 45,90" fill="#7B8573" opacity="0.85"/>
+            <path d="M52,70 Q68,60 70,68 Q60,76 50,75" fill="#7B8573" opacity="0.85"/>
+            <path d="M60,50 Q48,42 45,48 Q55,58 64,55" fill="#7B8573" opacity="0.85"/>
+            <path d="M68,35 Q80,26 84,32 Q74,42 66,40" fill="#7B8573" opacity="0.85"/>
+            <!-- Dried Petals (Muted Dusty Rose) -->
+            <circle cx="76" cy="20" r="9" fill="#C48D80" opacity="0.8"/>
+            <circle cx="86" cy="22" r="7" fill="#D9ABA0" opacity="0.8"/>
+            <circle cx="70" cy="14" r="8" fill="#A86F55" opacity="0.75"/>
+            <circle cx="80" cy="10" r="7" fill="#C48D80" opacity="0.8"/>
+            <circle cx="77" cy="18" r="4" fill="#6B4938"/>
+        </svg>
+
+        <!-- 5. Vintage Postmark Cancel Stamps (Right Margin) -->
+        <div class="desk-item desk-postmarks">
+            <div class="vintage-postmark">
+                <div>FIELD REC</div>
+                <div style="font-size: 0.9rem; font-weight: 900;">★ 402 ★</div>
+                <div>OCT 1892</div>
+            </div>
+        </div>
+
+        <!-- 6. Loose Paperclips (Left Margin) -->
+        <svg class="desk-item desk-paperclips" viewBox="0 0 40 70">
+            <path d="M12,8 L12,50 Q12,62 20,62 Q28,62 28,50 L28,16 Q28,5 18,5 Q8,5 8,16 L8,55" fill="none" stroke="#986E4D" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- Navigation Bar: Fabric Header Ribbon -->
+    <header class="navbar">
+        <div class="nav-brand" id="nav-brand">
+            <span class="brand-icon">📖</span>
+            <div>
+                <h1 class="brand-title">SoulSpecies</h1>
+                <div class="brand-subtitle">A Cozy Biometric Bullet Journal & Field Diary</div>
+            </div>
+        </div>
+        <div class="nav-actions">
+            <button class="paper-label-btn" id="btn-explore-codex">
+                <span>📑</span> All 15 Field Notes
+            </button>
+            <button class="paper-round-btn" id="btn-toggle-sound" title="Toggle Sound">
+                🔊
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Desk Canvas with Layered Paper Sheets -->
+    <main class="desk-canvas-container">
+        <!-- Sheet 1: Giant Kraft Underlay Sheet -->
+        <div class="desk-underlay-kraft" aria-hidden="true"></div>
+
+        <!-- Sheet 2: Parchment Dot-Grid Underlay Sheet -->
+        <div class="desk-underlay-parchment" aria-hidden="true"></div>
+
+        <!-- ===================================================================
+             VIEW 1: HERO VIEW (Physical Scrapbook Composition)
+             =================================================================== -->
+        <section class="app-view active" id="hero-view">
+            <div class="scrapbook-main-sheet">
+                <!-- Washi Tape Strips -->
+                <div class="washi-tape tape-gingham tape-pos-top-left"></div>
+                <div class="washi-tape tape-terracotta tape-pos-top-right"></div>
+
+                <!-- Brass Paperclip -->
+                <svg class="brass-paperclip clip-top-right" viewBox="0 0 30 65" aria-hidden="true">
+                    <path d="M12,5 L12,48 Q12,58 20,58 Q28,58 28,48 L28,15 Q28,4 16,4 Q4,4 4,16 L4,52" fill="none" stroke="#CAA88F" stroke-width="3.5" stroke-linecap="round"/>
+                    <path d="M12,5 L12,48 Q12,58 20,58 Q28,58 28,48 L28,15 Q28,4 16,4 Q4,4 4,16 L4,52" fill="none" stroke="#6B4938" stroke-width="1" stroke-linecap="round"/>
+                </svg>
+
+                <!-- Asymmetrical Header Spread -->
+                <div class="hero-spread-header">
+                    <!-- Kraft Round Date Stamp -->
+                    <div class="kraft-round-stamp">
+                        <span class="stamp-date">25</span>
+                        <span class="stamp-day">APRIL</span>
+                    </div>
+
+                    <!-- Torn Vintage Book Clipping Note -->
+                    <div style="max-width: 420px; transform: rotate(1deg);">
+                        <div class="torn-book-clipping">
+                            "Chapter 22: Should you find yourself sleeping 14 hours straight, you are not lazy; you are simply an honorary sloth bear observing afternoon tea."
+                        </div>
+                    </div>
+
+                    <!-- Yellow Sticky Note -->
+                    <div class="sticky-note-yellow">
+                        note to self: <br> find my spirit twin ✿
+                    </div>
+                </div>
+
+                <h2 class="journal-heading">
+                    If you weren't a human, <br>
+                    <span class="brush-highlight">what creature would you be?</span>
+                </h2>
+
+                <p class="journal-subtext">
+                    "Step inside this cozy scrapbook. We will scan your facial aura, ask funny everyday personality questions, and reveal your true non-human twin in an authentic, collectible field passport."
+                </p>
+
+                <!-- Asymmetrical Polaroid Composition -->
+                <div class="polaroid-composition" id="hero-showcase-carousel">
+                    <!-- Injected via JavaScript with polaroid cards -->
+                </div>
+
+                <!-- Mode Selector (Paper Label Stickers) -->
+                <div class="mode-selector-wrap">
+                        <button class="paper-mode-label mode-pill active" data-mode="quick">
+                            ⚡ Quick Spread (5 Questions)
+                        </button>
+                        <button class="paper-mode-label mode-pill" data-mode="full">
+                            📖 Deep Diary (All 10 Questions)
+                        </button>
+                </div>
+
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <button class="wax-seal-button" id="btn-start-experience">
+                        <span>📸</span> Open Camera & Begin Journal Entry
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             VIEW 2: CAMERA & SCANNER (Pinhole Viewfinder Spread)
+             =================================================================== -->
+        <section class="app-view" id="scanner-view">
+            <div class="scanner-sheet">
+                <div class="washi-tape tape-kraft tape-pos-top-center"></div>
+
+                <div class="camera-header-tag">SPECIMEN VIEWING LENS</div>
+                <h2 class="camera-title">Pinhole Face Scanner</h2>
+                <p class="camera-subtitle">Align your face inside the brass viewfinder for aura extraction</p>
+
+                <div class="analog-lens-frame">
+                    <video id="camera-video" autoplay playsinline muted></video>
+                    
+                    <div class="hud-overlay">
+                        <div class="scanner-laser"></div>
+                        <div class="hud-reticle"></div>
+                    </div>
+                </div>
+
+                <!-- Handwritten Sticky Note Telemetry -->
+                <div>
+                    <div class="telemetry-sticky-note" id="scanner-telemetry">
+                        Calibrating Viewfinder: <span class="telemetry-val">Face Alignment Ready ✨</span>
+                    </div>
+                </div>
+
+                <!-- Scanner Actions -->
+                <div class="scanner-controls">
+                    <button class="wax-seal-button" id="btn-capture-photo">
+                        <span>⚡</span> Snap & Record Face
+                    </button>
+                    <button class="paper-btn-secondary" id="btn-upload-photo">
+                        <span>📁</span> Upload Photo Instead
+                    </button>
+                    <button class="paper-btn-secondary" id="btn-use-demo-selfie">
+                        <span>🎨</span> Use Doodled Face
+                    </button>
+                </div>
+
+                <canvas id="snapshot-canvas"></canvas>
+                <input type="file" id="file-upload-input" accept="image/*">
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             VIEW 3: QUIZ VIEW (Memo Slips & Diary Questions)
+             =================================================================== -->
+        <section class="app-view" id="quiz-view">
+            <div class="quiz-sheet">
+                <div class="washi-tape tape-sage tape-pos-top-left"></div>
+                <div class="washi-tape tape-gingham tape-pos-top-right"></div>
+
+                <div class="quiz-progress-bar-container">
+                    <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                </div>
+
+                <div class="quiz-meta-row">
+                    <div class="quiz-topic-badge" id="quiz-topic">
+                        <!-- Injected via JS -->
+                    </div>
+                    <div class="quiz-count-badge" id="quiz-counter">
+                        Question 1 of 5
+                    </div>
+                </div>
+
+                <h3 class="quiz-question-text" id="quiz-question">
+                    Loading journal entry...
+                </h3>
+
+                <div class="quiz-options-grid" id="quiz-options-container">
+                    <!-- Injected via JS with asymmetrical rotated memo slips -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             VIEW 4: SYNTHESIZING VIEW (Rustling Pages & Drying Ink)
+             =================================================================== -->
+        <section class="app-view" id="synth-view">
+            <div class="synth-sheet">
+                <div class="washi-tape tape-terracotta tape-pos-top-center"></div>
+
+                <div class="synth-animation-box">
+                    <div class="synth-orb"></div>
+                    <div class="synth-icon">📜</div>
+                </div>
+                <h3 class="synth-status-text" id="synth-status-text">
+                    Flipping through the archive pages...
+                </h3>
+                <p class="synth-subtext">
+                    Cross-referencing facial aura notes with behavioral sketches
+                </p>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             VIEW 5: CREATURE REVEAL VIEW (Field Guide Passport Spread)
+             =================================================================== -->
+        <section class="app-view" id="result-view">
+            <div class="passport-sheet" id="passport-card-element">
+                <div class="washi-tape tape-kraft tape-pos-top-left"></div>
+                <div class="washi-tape tape-terracotta tape-pos-top-right"></div>
+
+                <div class="passport-badge-header">
+                    <div class="passport-agency">
+                        FIELD ARCHIVE OF NON-HUMAN SPECIMENS · ENTRY NO. 402
+                    </div>
+                    <div class="passport-stamp">
+                        ★ VERIFIED SPIRIT ★
+                    </div>
+                </div>
+
+                <!-- Side-by-Side Polaroids -->
+                <div class="match-comparison-row">
+                    <div class="avatar-badge-box">
+                        <div class="avatar-frame">
+                            <img id="result-user-photo" src="" alt="Biometric Face Scan">
+                        </div>
+                        <div class="avatar-label">YOU (FIELD SKETCH)</div>
+                    </div>
+
+                    <div class="match-dna-badge">
+                        <span class="match-pct" id="result-match-pct">98.5%</span>
+                        <span class="match-sub">MATCH</span>
+                    </div>
+
+                    <div class="avatar-badge-box">
+                        <div class="avatar-frame" id="result-creature-svg-wrap">
+                            <!-- Animated Creature SVG -->
+                        </div>
+                        <div class="avatar-label">TRUE SPIRIT TWIN</div>
+                    </div>
+                </div>
+
+                <!-- Creature Title -->
+                <div class="creature-header-info">
+                    <h2 class="creature-reveal-name" id="result-creature-name">Aurelia the Star-Eyed</h2>
+                    <div class="creature-reveal-latin" id="result-creature-latin">Forest Elfkin · CURIOUS</div>
+                    <span class="creature-category-pill" id="result-creature-category">Archetype: The Inquisitive Seeker</span>
+                </div>
+
+                <!-- Pinned Note Roast & Quote -->
+                <div class="creature-roast-card">
+                    <div class="creature-famous-quote" id="result-creature-quote">
+                        "Every question is a secret door waiting for someone brave enough to turn the knob."
+                    </div>
+                    <div class="creature-roast-text" id="result-creature-roast">
+                        You have 47 open tabs in your mind and you will stay awake until 3 AM reading about ancient moss.
+                    </div>
+                </div>
+
+                <!-- Attribute Telemetry Bars -->
+                <div class="creature-stats-section">
+                    <div class="stats-title">
+                        <span>📊</span> Field Journal Telemetry
+                    </div>
+                    <div id="result-stats-container">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Habitat & Diet Cards -->
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <div class="detail-label">Natural Habitat</div>
+                        <div class="detail-val" id="result-habitat">The Grand Starlight Archive & Sunlit Study</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Preferred Diet</div>
+                        <div class="detail-val" id="result-diet">Earl grey tea, cinnamon scones, and midnight Wikipedia spirals</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+                 PERSONALIZED SPIRIT TWIN SECTION
+                 Generated deterministically from quiz answer scores
+                 ============================================================ -->
+            <div class="twin-reveal-section" id="twin-reveal-section">
+                <div class="twin-section-tape">
+                    <div class="washi-tape tape-gingham tape-pos-top-left"></div>
+                    <div class="washi-tape tape-sage tape-pos-top-right"></div>
+                </div>
+
+                <div class="twin-header">
+                    <div class="twin-header-stamp">✦ YOUR SPIRIT TWIN ✦</div>
+                    <h3 class="twin-title">Meet Your Visual Personality Twin</h3>
+                    <p class="twin-subtitle">Generated uniquely from your answers — <em>no one else gets the same twin.</em></p>
+                </div>
+
+                <div class="twin-body-layout">
+                    <!-- Left: Twin SVG -->
+                    <div class="twin-svg-frame" id="twin-svg-container">
+                        <!-- Injected via JS -->
+                    </div>
+
+                    <!-- Right: Twin Profile Card -->
+                    <div class="twin-profile-card">
+                        <div class="twin-name-tag">
+                            <div class="twin-name-label">TWIN NAME</div>
+                            <div class="twin-name" id="twin-name">Velion Goldcrest</div>
+                        </div>
+                        <div class="twin-creature-type">
+                            <span class="twin-pill" id="twin-creature-label">Forest Elf</span>
+                            <span class="twin-pill" id="twin-trait">curious</span>
+                        </div>
+                        <div class="twin-description" id="twin-description">
+                            Forever asking "but why though?", this twin collects knowledge like others collect snacks.
+                        </div>
+                        <div class="twin-attributes-grid">
+                            <div class="twin-attr">
+                                <span class="twin-attr-label">🎨 Palette</span>
+                                <span class="twin-attr-val" id="twin-palette">—</span>
+                            </div>
+                            <div class="twin-attr">
+                                <span class="twin-attr-label">👗 Outfit</span>
+                                <span class="twin-attr-val" id="twin-outfit">—</span>
+                            </div>
+                            <div class="twin-attr">
+                                <span class="twin-attr-label">🌿 World</span>
+                                <span class="twin-attr-val" id="twin-environment">—</span>
+                            </div>
+                            <div class="twin-attr">
+                                <span class="twin-attr-label">🧍 Pose</span>
+                                <span class="twin-attr-val" id="twin-pose">—</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="result-actions-row">
+                <button class="wax-seal-button" id="btn-download-card">
+                    <span>📥</span> Download Field Passport (PNG)
+                </button>
+                <button class="paper-btn-secondary" id="btn-creature-voice">
+                    <span>🔊</span> Hear Creature Voice
+                </button>
+                <button class="paper-btn-secondary" id="btn-restart">
+                    <span>🔄</span> Try Another Mood
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================
+             VIEW 6: SOULSPECIES FIELD ARCHIVE — Fantasy Field Journal
+             =================================================================== -->
+        <section class="app-view" id="codex-view">
+            <div class="codex-sheet">
+                <div class="washi-tape tape-sage tape-pos-top-center"></div>
+
+                <div class="codex-header">
+                    <div class="archive-title-stamp">✦ Est. Year Unknown · Classified Field Research ✦</div>
+                    <h2 class="codex-title">The SoulSpecies Field Archive</h2>
+                    <p class="codex-subtitle">Rare non-human personalities observed in the wild.</p>
+                    <div class="archive-divider"></div>
+                </div>
+                <div class="codex-grid" id="codex-grid-container">
+                    <!-- Injected via JS -->
+                </div>
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <button class="paper-btn-secondary" id="btn-back-from-codex">
+                        <span>⬅️</span> Back to Journal
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SPECIMEN DETAIL MODAL OVERLAY
+             =================================================================== -->
+        <div id="specimen-modal-overlay" role="dialog" aria-modal="true" aria-label="Specimen Detail">
+            <div class="specimen-modal-journal" id="specimen-modal-journal">
+                <button class="modal-close-btn" id="specimen-modal-close" aria-label="Close">✕</button>
+                <div class="modal-tape-strip"></div>
+                <div class="modal-img-wrap" id="modal-img-wrap">
+                    <img id="modal-img" src="" alt="Creature illustration">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-specimen-no" id="modal-specimen-no">SPECIMEN 00</div>
+                    <div class="modal-name" id="modal-name">—</div>
+                    <div class="modal-latin" id="modal-latin">—</div>
+                    <div class="modal-class-tag" id="modal-class-tag">—</div>
+
+                    <div class="modal-grid">
+                        <div class="modal-field">
+                            <span class="modal-field-label">🌿 Habitat</span>
+                            <span class="modal-field-value" id="modal-habitat">—</span>
+                        </div>
+                        <div class="modal-field">
+                            <span class="modal-field-label">⚡ Temperament</span>
+                            <span class="modal-field-value" id="modal-temperament">—</span>
+                        </div>
+                        <div class="modal-field">
+                            <span class="modal-field-label">🎯 Known For</span>
+                            <span class="modal-field-value" id="modal-knownFor">—</span>
+                        </div>
+                        <div class="modal-field">
+                            <span class="modal-field-label">💔 Weakness</span>
+                            <span class="modal-field-value" id="modal-weakness">—</span>
+                        </div>
+                        <div class="modal-field">
+                            <span class="modal-field-label">✨ Carries</span>
+                            <span class="modal-field-value" id="modal-carries">—</span>
+                        </div>
+                        <div class="modal-field">
+                            <span class="modal-field-label">🍃 Diet</span>
+                            <span class="modal-field-value" id="modal-diet">—</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-divider"></div>
+
+                    <div class="modal-stat-section">
+                        <div class="modal-stat-row">
+                            <span class="modal-stat-label">Curiosity</span>
+                            <div class="modal-stat-bar"><div class="modal-stat-fill" id="stat-curiosity" style="background:#C88A4C; width:0%"></div></div>
+                            <span class="modal-stat-value" id="stat-curiosity-val">0%</span>
+                        </div>
+                        <div class="modal-stat-row">
+                            <span class="modal-stat-label">Mischief</span>
+                            <div class="modal-stat-bar"><div class="modal-stat-fill" id="stat-mischief" style="background:#A84F45; width:0%"></div></div>
+                            <span class="modal-stat-value" id="stat-mischief-val">0%</span>
+                        </div>
+                        <div class="modal-stat-row">
+                            <span class="modal-stat-label">Calmness</span>
+                            <div class="modal-stat-bar"><div class="modal-stat-fill" id="stat-calmness" style="background:#5D7860; width:0%"></div></div>
+                            <span class="modal-stat-value" id="stat-calmness-val">0%</span>
+                        </div>
+                        <div class="modal-stat-row">
+                            <span class="modal-stat-label">Wisdom</span>
+                            <div class="modal-stat-bar"><div class="modal-stat-fill" id="stat-wisdom" style="background:#7E6B88; width:0%"></div></div>
+                            <span class="modal-stat-value" id="stat-wisdom-val">0%</span>
+                        </div>
+                        <div class="modal-stat-row">
+                            <span class="modal-stat-label">Energy</span>
+                            <div class="modal-stat-bar"><div class="modal-stat-fill" id="stat-energy" style="background:#B58B68; width:0%"></div></div>
+                            <span class="modal-stat-value" id="stat-energy-val">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-divider"></div>
+
+                    <div class="modal-field-note">
+                        <span class="modal-field-note-label">📋 Researcher's Field Note</span>
+                        <span id="modal-field-note">—</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Scripts in dependency order -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/creatures.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/twin-generator.js"></script>
+    <script src="js/card-exporter.js"></script>
+    <script src="js/codex-archive.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
