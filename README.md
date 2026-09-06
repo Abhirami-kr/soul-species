@@ -50,20 +50,12 @@ npx serve .
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1900" height="911" alt="Screenshot 2026-09-06 083530" src="https://github.com/user-attachments/assets/8230a20b-547e-4884-8fae-0b2133813ac0" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1898" height="913" alt="Screenshot 2026-09-06 083418" src="https://github.com/user-attachments/assets/a238eb12-c723-402c-85af-d5de17278956" />
 
 
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
