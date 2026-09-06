@@ -55,7 +55,8 @@ For Software:
 
 <img width="1898" height="913" alt="Screenshot 2026-09-06 083418" src="https://github.com/user-attachments/assets/a238eb12-c723-402c-85af-d5de17278956" />
 
-
+## Project Demo
+project url: https://soul-species.vercel.app/
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
